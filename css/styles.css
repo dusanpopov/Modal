@@ -1,6 +1,10 @@
 *, *::after, *::before {
     box-sizing: border-box;
   }
+
+  html{
+    font-size: 62.5%;
+  }
   
   .modal {
     position: fixed;
@@ -8,11 +12,11 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
-    border: 1px solid black;
-    border-radius: 10px;
+    border: .1rem solid black;
+    border-radius: 1rem;
     z-index: 10;
     background-color: white;
-    width: 500px;
+    width: 50rem;
     max-width: 80%;
   }
   
@@ -21,15 +25,15 @@
   }
   
   .modal__header {
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1.rem solid black;
   }
   
   .modal__title {
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     font-weight: bold;
   }
   
@@ -42,8 +46,9 @@
     font-weight: bold;
   }
   
-  .modal-body {
-    padding: 10px 15px;
+  .modal__body {
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
   }
   
   .overlay {
